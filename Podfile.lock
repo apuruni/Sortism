@@ -1,0 +1,10 @@
+PODS:
+  - UIColor+BFPaperColors (1.7.1)
+
+DEPENDENCIES:
+  - UIColor+BFPaperColors
+
+SPEC CHECKSUMS:
+  UIColor+BFPaperColors: b1efa4320e2f56c4b14f73232faf967ba0e5b4a2
+
+COCOAPODS: 0.36.3
