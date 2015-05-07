@@ -18,6 +18,8 @@
 		63B5D0021AFB6B1F00206337 /* SortPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5D0001AFB6B1F00206337 /* SortPlayerController.swift */; };
 		63B5D0041AFB6C1600206337 /* SortListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5D0031AFB6C1600206337 /* SortListController.swift */; };
 		63B5D0051AFB6C1600206337 /* SortListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5D0031AFB6C1600206337 /* SortListController.swift */; };
+		63FF3EA41AFB7E6C00974CED /* SortSKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FF3EA31AFB7E6C00974CED /* SortSKView.swift */; };
+		63FF3EA51AFB7E6C00974CED /* SortSKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FF3EA31AFB7E6C00974CED /* SortSKView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 		63B5CFF41AFB69AC00206337 /* SortismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortismTests.swift; sourceTree = "<group>"; };
 		63B5D0001AFB6B1F00206337 /* SortPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortPlayerController.swift; sourceTree = "<group>"; };
 		63B5D0031AFB6C1600206337 /* SortListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortListController.swift; sourceTree = "<group>"; };
+		63FF3EA31AFB7E6C00974CED /* SortSKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortSKView.swift; sourceTree = "<group>"; };
 		78B82DC2F7F99CC990DE6142 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECA70C31C47D72D4F285FFC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C582B899078314627F73A725 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 		63B5CFFE1AFB6A1700206337 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				63FF3EA31AFB7E6C00974CED /* SortSKView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -296,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B5D0011AFB6B1F00206337 /* SortPlayerController.swift in Sources */,
+				63FF3EA41AFB7E6C00974CED /* SortSKView.swift in Sources */,
 				63B5CFE11AFB69AB00206337 /* MenuController.swift in Sources */,
 				63B5CFDF1AFB69AB00206337 /* AppDelegate.swift in Sources */,
 				63B5D0041AFB6C1600206337 /* SortListController.swift in Sources */,
@@ -306,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FF3EA51AFB7E6C00974CED /* SortSKView.swift in Sources */,
 				63B5D0021AFB6B1F00206337 /* SortPlayerController.swift in Sources */,
 				63B5D0051AFB6C1600206337 /* SortListController.swift in Sources */,
 				63B5CFF51AFB69AC00206337 /* SortismTests.swift in Sources */,
