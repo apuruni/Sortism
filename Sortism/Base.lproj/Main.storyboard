@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pfd-0Q-6QS" kind="presentation" id="viO-vr-Uy0"/>
+                                    <segue destination="UQh-p0-IWU" kind="presentation" id="viO-vr-Uy0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,7 +63,7 @@
                                                     </constraints>
                                                     <state key="normal" title="Play"/>
                                                     <connections>
-                                                        <segue destination="nri-sJ-ecf" kind="presentation" id="PLL-1n-SIQ"/>
+                                                        <segue destination="nri-sJ-ecf" kind="show" id="PLL-1n-SIQ"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n76-gH-n6E">
@@ -96,13 +96,14 @@
                             <constraint firstItem="2yi-W6-fZY" firstAttribute="leading" secondItem="u4N-E5-rRv" secondAttribute="leadingMargin" id="tyP-bj-cES"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uNg-QU-Ifv"/>
                     <connections>
                         <outlet property="tableView" destination="2yi-W6-fZY" id="zYu-Y9-CF1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtQ-BF-rUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="307"/>
+            <point key="canvasLocation" x="1172" y="1151"/>
         </scene>
         <!--Sort Player Controller-->
         <scene sceneID="TXO-0x-onU">
@@ -120,7 +121,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAg-YR-tTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738" y="307"/>
+            <point key="canvasLocation" x="1916" y="1151"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KuY-tL-4cw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UQh-p0-IWU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iEh-D1-3FR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pfd-0Q-6QS" kind="relationship" relationship="rootViewController" id="v6k-t9-269"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJK-Tv-5jN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="1151"/>
         </scene>
     </scenes>
 </document>
