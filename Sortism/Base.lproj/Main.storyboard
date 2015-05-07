@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Menu Controller-->
@@ -44,8 +45,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2yi-W6-fZY">
-                                <rect key="frame" x="0.0" y="15" width="600" height="600"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2yi-W6-fZY">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sortDetailCell" id="uuG-44-Dt6">
@@ -54,21 +55,50 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uuG-44-Dt6" id="cne-cG-Vjy">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-kS-DoS">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-kS-DoS">
                                                     <rect key="frame" x="518" y="11" width="74" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="74" id="Isb-w0-rak"/>
+                                                        <constraint firstAttribute="height" constant="22" id="zqD-Dw-bjN"/>
+                                                    </constraints>
                                                     <state key="normal" title="Play"/>
                                                     <connections>
                                                         <segue destination="nri-sJ-ecf" kind="presentation" id="PLL-1n-SIQ"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n76-gH-n6E">
+                                                    <rect key="frame" x="22" y="11" width="83" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="83" id="Ib2-wC-tP7"/>
+                                                        <constraint firstAttribute="height" constant="21" id="gcS-in-RWk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jBR-kS-DoS" secondAttribute="trailing" constant="-32" id="Brt-Ky-uMu"/>
+                                                <constraint firstItem="n76-gH-n6E" firstAttribute="top" secondItem="cne-cG-Vjy" secondAttribute="topMargin" constant="3" id="mG0-0U-nxk"/>
+                                                <constraint firstItem="jBR-kS-DoS" firstAttribute="top" secondItem="cne-cG-Vjy" secondAttribute="topMargin" constant="3" id="p8f-ke-8oy"/>
+                                                <constraint firstItem="n76-gH-n6E" firstAttribute="leading" secondItem="cne-cG-Vjy" secondAttribute="leadingMargin" constant="14" id="xdV-BL-dEm"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2yi-W6-fZY" firstAttribute="top" secondItem="u4N-E5-rRv" secondAttribute="topMargin" id="MVY-Ve-RfC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2yi-W6-fZY" secondAttribute="trailing" id="Yrt-mL-2fM"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2yi-W6-fZY" secondAttribute="bottom" id="dE3-4q-yEH"/>
+                            <constraint firstItem="2yi-W6-fZY" firstAttribute="leading" secondItem="u4N-E5-rRv" secondAttribute="leadingMargin" id="tyP-bj-cES"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="2yi-W6-fZY" id="zYu-Y9-CF1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtQ-BF-rUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
